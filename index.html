@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/376e18c424.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/cwu1qoe.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container" id="app">
+      <form id="search-city">
+        <input type="text" id="city-input" placeholder="Enter a City">
+        <input type="submit" value="Search">
+      </form>
+        <h1>
+            16° C
+        </h1>
+        <h2>
+            Rain and thunderstorms
+        </h2>
+        <i class="fa-solid fa-cloud-moon-rain"></i>
+        <div class="city">
+            <p>
+                London
+            </p>
+        </div>
+        <div class="date">
+            <p>
+                Monday, October 31, 2022
+            </p>
+        </div>
+        <div class="forecast">
+            <p>
+                Five day forecast
+            </p>
+            <div class="container text-center" id="forecastweek">
+                <div class="row">
+                  <div class="col">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <p>Tue</p>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <p>Wed</p>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>Thu</p>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>Fri</p>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-sun"></i>
+                    <p>Sat</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
