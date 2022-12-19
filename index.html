@@ -17,13 +17,25 @@
         <input type="text" id="city-input" placeholder="Enter a City">
         <input type="submit" value="Search">
       </form>
-        <h1>
-            16° C
-        </h1>
-        <h2>
-            Rain and thunderstorms
-        </h2>
+       <div class="tempUnit">
+            16 
+        </div>
+        <span class="units">°C | °F</span>
+    
+        <div class="overview">
+            Rain
+        </div>
+        <div class="row" id="weatherinfo">
+          <div class="col">
         <i class="fa-solid fa-cloud-moon-rain"></i>
+      </div>
+      <div class="col">
+        <ul>
+          <li>Wind Speed</li>
+          <li>Humidity</li>
+        </ul>
+      </div>
+      </div>
         <div class="city">
             <p>
                 London
@@ -66,7 +78,7 @@
     </div>
     <br>
     <p class="name">
-      <a href="https://github.com/nat-jpg/shecodes-test">Open-source code</a> by Nathalie Donado
+      <a href="https://github.com/nat-jpg/shecodes-test" target="_blank">Open-source code</a> by Nathalie Donado
     </p>
     <script src="java.js"></script>
 </body>

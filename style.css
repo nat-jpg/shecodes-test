@@ -12,16 +12,25 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 36px -15px rgba(0,0,0,0.75);
 }
-h1 {
+.tempUnit {
   font-size: 70px;
   font-weight: 200;
 font-style: normal;
 text-align: left;
 padding-top: 30px;
+margin-bottom: 0;
+display: inline;
 }
-h2 {
+.units {
+   position: relative;
+   font-size: 16px;
+   top: -34px;
+}
+.overview {
+    font-size: 30px;
     font-style: normal;
     font-weight: 100;
+    margin-top: 0;
 }
 form {
     text-align: center;
@@ -32,6 +41,7 @@ form {
     font-size: 50px;
     font-style: italic;
     font-weight: 100;
+    margin-bottom: 0;
 }
 .date {
     text-align: right;
@@ -43,4 +53,10 @@ form {
     color: black;
     text-align: center;
 }
-
+li {
+    list-style: none;
+    text-align: right;
+}
+#weatherinfo {
+    padding-top: 20px;
+}
