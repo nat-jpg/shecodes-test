@@ -56,6 +56,7 @@ form {
 li {
     list-style: none;
     text-align: right;
+    font-size: 14px;
 }
 #weatherinfo {
     padding-top: 20px;
