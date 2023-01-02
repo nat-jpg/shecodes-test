@@ -16,6 +16,32 @@ let day = days[now.getDay()];
 let date = document.querySelector(".date");
 date.innerHTML = `${day} ${hour}:${minute}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecastweek");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML = forecastHTML +
+    `
+    <div class="col">
+      <div class="weather-forcast-date">${day}</div>
+      <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" width="36px">
+      <div class="weather-forecast-temp">
+        <span class="weather-forecast-max">18°</span>
+        <span class="weather-forecast-min">12°</span>
+      </div>
+    </div>
+    `;
+                    
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function displayWeather(response) {
   let temperature = document.querySelector(".tempUnit");
   temperature.innerHTML = Math.round(response.data.main.temp);
@@ -46,4 +72,4 @@ function city(event) {
 let inputCity = document.querySelector("#search-city");
 inputCity.addEventListener("submit", city);
 
-  
+  displayForecast();
