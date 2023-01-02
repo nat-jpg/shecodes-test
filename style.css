@@ -7,7 +7,7 @@ body {
     color: white;
 }
 #app {
-    background: linear-gradient(180deg, hsla(192, 20%, 49%, 1) 0%, hsla(23, 91%, 54%, 1) 100%);
+    background: linear-gradient(179.7deg, rgb(197, 214, 227) 2.9%, rgb(144, 175, 202) 97.1%);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 10px 10px 36px -15px rgba(0,0,0,0.75);
