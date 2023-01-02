@@ -16,7 +16,8 @@ let day = days[now.getDay()];
 let date = document.querySelector(".date");
 date.innerHTML = `${day} ${hour}:${minute}`;
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecastweek");
 
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
@@ -44,8 +45,9 @@ function displayForecast() {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "9171ffc58ca719fcd9afd47b128d0e6f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric}`;
+  let apiKey = "cf6b50b908fa2e0baca3eed8a569a5f6";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -81,4 +83,4 @@ function city(event) {
 let inputCity = document.querySelector("#search-city");
 inputCity.addEventListener("submit", city);
 
-  displayForecast();
+ 
