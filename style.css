@@ -1,6 +1,6 @@
 body {
     font-family: bilo, sans-serif;
-    max-width: 400px;
+    max-width: 500px;
     background-color: white;
     margin: 0 auto;
     padding-top: 30px;
@@ -70,4 +70,6 @@ ul {
 }
 #forecastweek {
     padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
